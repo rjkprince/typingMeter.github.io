@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypingSpeedTest</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="topbar">
+      <h1>Typing Speed Test</h1>
+    </header>
+
+    <div class="bg-image"></div>
+    <div id="btns">
+      <button class="free-style">FREE STYLE</button>
+      <button id="real">CHECK YOUR REAL SPEED</button>
+    </div>
+
+    <main>
+      <div id="paragraph">
+        <h3>
+          Write the following paragraph strictly (There is no line break):
+        </h3>
+        <p id="para"></p>
+        <h4 style="color: red;">You Typed Something Wrong.</h4>
+        <h4>You are writing it as expected.</h4>
+      </div>
+      <div id="card-container">
+        <div id="card-topbar">
+          <h2 class="count-var">
+            <span>CHARACTERS: </span><span id="char-count">0</span>
+          </h2>
+          <h2 class="count-var">
+            <span>WORDS:</span> <span id="word-count">0</span>
+          </h2>
+          <h2 class="count-var">
+            <span> WHITESPACE:</span> <span id="whitespace-count">0</span>
+          </h2>
+          <h2 class="count-var">
+            <span>LINES:</span> <span id="lines-count">0</span>
+          </h2>
+        </div>
+        <div id="card-content">
+          <textarea
+            name="textInput"
+            id="textInput"
+            cols="30"
+            rows="10"
+            placeholder="Enter some text to start"
+          ></textarea>
+        </div>
+        <div id="card-footer">
+          <h2 class="count-var" id="curr">
+            <span>CURRENT SPEED: </span><span id="curr-speed">0.00 char/s</span>
+          </h2>
+          <h2 class="count-var">
+            <span>TIME LEFT:</span> <span id="time-left">60s</span>
+          </h2>
+          <h2><button class="free-style" id="tryAgn">TRY AGAIN</button></h2>
+          <h2 class="count-var" id="final">
+            <span>FINAL SPEED:</span>
+            <span id="fnl-speed">0.00 char/s</span>
+          </h2>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
